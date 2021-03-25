@@ -11,6 +11,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<!-- Scriptlet tag -->
     <%
        String url="jdbc:mysql://localhost:3306/murali";
        String uname="root";
@@ -26,6 +28,7 @@
        rs.next();
        
     %>
+    <!-- Expression tags -->
       <p style="color:DodgerBlue;">Rollno :<%=rs.getString(1) %></p>
       <p style="color:red;">name   :<%=rs.getString(2) %></p>
       <p style="color:yellow;">Year   :<%=rs.getString(3)%></p>
